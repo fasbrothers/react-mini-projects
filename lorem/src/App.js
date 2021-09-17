@@ -15,7 +15,7 @@ function App() {
   return (
     <section className="section-center">
       <h3>TIRED OF BORING LOREM IPSUM</h3>
-      <form className="lorem-form" onSubmit={handleSubmit}>
+      <form className="lorem-form">
         <label className="amount">Paragraphs:</label>
         <input
           type="number"
@@ -26,7 +26,7 @@ function App() {
             setCount(e.target.value);
           }}
         />
-        <button type="submit" className="btn">
+        <button onClick={handleSubmit} className="btn">
           Generate
         </button>
       </form>
